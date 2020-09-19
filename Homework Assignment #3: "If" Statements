@@ -1,0 +1,15 @@
+ef compare_func(a, b, c):
+
+    if int(a) == int(b) or int(b) == int(c) or int(a) == int(c):
+        return True
+    else:
+        return False
+
+
+# Check the compare function
+print(compare_func(2, 2, 5)) # True
+print(compare_func(2, 5, 5)) # True
+print(compare_func(2, 5, 2)) # True
+print(compare_func(2, 3, 4)) # False
+# Extra Credit
+print(compare_func(6, 5, "5")) # True
